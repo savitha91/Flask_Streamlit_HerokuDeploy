@@ -14,7 +14,7 @@ def add_header(r):
     r.headers['Cache-Control'] = 'public, max-age=0'
     return r
 
-@app.route('/', methods = ["GET"])
+@app.route('/')
 def home():
     return render_template('app.html')
 
