@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Speech to Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    {{ JSGlue.include() }}
+  </head>
+  <body>
+    <div class = 'content'>
+    <h1>Flask app in Heroku</h1>
+     <img src="{{url_for('static', filename='welcome.jpeg')}}" width="600" height="400"/>
+    <script type="text/javascript" src="{{url_for('static', filename='css/app.js')}}"></script>
+
+    </div>
+  </body>
+</html>
