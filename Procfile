@@ -1,1 +1,1 @@
-web:gunicorn && AppFlask:app
+web: gunicorn AppFlask:app
