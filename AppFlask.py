@@ -18,9 +18,6 @@ def add_header(r):
 def home():
     return render_template('app.html')
 
-@app.route('/thanks', methods = ["GET"])
-def home():
-    return
 
 if __name__ == "__main__":
     app.run(debug=True,host='0.0.0.0')
